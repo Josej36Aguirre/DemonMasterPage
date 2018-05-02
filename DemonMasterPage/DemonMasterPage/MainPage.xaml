@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DemonMasterPage"
+             x:Class="DemonMasterPage.MainPage"
+                  Title="MasterDetailPage Demo">
+
+    <!--<MasterDetailPage.Master>
+        <ContentPage Title="Maestro">
+            <StackLayout>
+                <Button   Text="Soy el maestro"></Button>
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <ContentPage>
+            <StackLayout>
+                <Button x:Name="btnMaestro" Text="Soy el detalle"></Button>
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Detail>-->
+    <MasterDetailPage.Master>
+        <local:Maestro></local:Maestro>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <local:Detalle></local:Detalle>
+    </MasterDetailPage.Detail>
+
+</MasterDetailPage>
